@@ -13,7 +13,6 @@ def home():
 
 @app.route("/github", methods=["POST"])
 def read_event():
-    print(request)
     if request.headers["Content-Type"] == "application/json":
         payload = json.dumps(request.json)
         print(payload)
