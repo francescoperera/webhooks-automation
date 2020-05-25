@@ -1,7 +1,7 @@
 name: Repository Dispatch
 on:
   repository_dispatch:
-    types: test-dispatch-event-received
+    types: trigger-action
 jobs:
   myEvent:
     runs-on: ubuntu-latest
